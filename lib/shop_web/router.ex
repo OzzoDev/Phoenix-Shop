@@ -24,6 +24,8 @@ defmodule ShopWeb.Router do
     get "/products", ProductController, :index
     get "/products/:slug", ProductController, :show
     get "/random", RandomController, :random
+
+    resources "/promotions", PromotionController
   end
 
   # Other scopes may use custom stacks.
