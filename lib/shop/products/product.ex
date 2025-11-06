@@ -1,8 +1,8 @@
-defmodule Shop.Product do
+defmodule Shop.Products.Product do
   use Ecto.Schema
   import Ecto.Changeset
 
-  schema "prodcuts" do
+  schema "products" do
     field :name, :string
     field :slug, :string
     field :console, Ecto.Enum, values: [:pc, :xbox, :nintendo, :playstation]
